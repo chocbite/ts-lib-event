@@ -1,20 +1,20 @@
 {
   "name": "@chocbite/ts-lib-event",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Event handling library for TypeScript projects.",
   "author": "chocolateandmilkwin",
   "license": "MIT",
   "type": "module",
   "private": false,
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "publishConfig": {
     "access": "public"
   },
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts"
     }
   },
   "files": [
