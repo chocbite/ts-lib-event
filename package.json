@@ -1,6 +1,6 @@
 {
   "name": "@chocbite/ts-lib-event",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Event handling library for TypeScript projects.",
   "author": "chocolateandmilkwin",
   "license": "MIT",
@@ -25,18 +25,19 @@
     "build": "tsdown src/index.ts",
     "lint": "eslint src/**/*.ts",
     "test": "vitest run",
+    "check-deps": "npx depcheck",
     "check-trials": "tsc --noEmit",
-    "prepublishOnly": "npm run check-trials && npm run build",
+    "prepublishOnly": "npm run check-deps && npm run check-trials && npm run build",
     "upgrades": "npx npm-check-updates --target semver",
     "upgrade": "npx npm-check-updates --target semver -u && npm install"
   },
   "devDependencies": {
+    "@chocbite/ts-supplement-eslint": "^1.0.0",
     "typescript": "^6.0.2",
-    "tsdown": "^0.21.7",
-    "vite": "^7.3.1",
-    "vitest": "^4.1.2",
-    "eslint": "^9.39.4",
-    "typescript-eslint": "^8.58.0",
-    "@vitest/browser-playwright": "^4.1.2"
+    "tsdown": "^0.21.8",
+    "vite": "^8.0.8",
+    "vitest": "^4.1.4",
+    "eslint": "^10.2.0",
+    "@vitest/browser-playwright": "^4.1.4"
   }
 }
